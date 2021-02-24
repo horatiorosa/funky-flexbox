@@ -1,3 +1,6 @@
 node_modules/
 .DS_Store
 *.zip
+
+
+# browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'Firefox'

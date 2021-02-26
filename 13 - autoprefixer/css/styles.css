@@ -1,15 +1,43 @@
 .container {
-  display:flex;
-  flex-direction:column;
-  align-content:center;
-  justify-content:center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.box {
+  width: 33.3333333%;
 }
 
 .box1 {
-  flex:10 5 450px;
+  flex: 10 5 450px;
 }
 
 .box2 {
-  flex:1 1 360px;
+  flex: 1 1 360px;
 }
+
+.box3 {
+  order: 2;
+}
+
+.box7 {
+  order: 3;
+}
+
+.box10 {
+  order: -4;
+}
+
+.box8 {
+  order: -2;
+}
+
+.box5 {
+  order: -1;
+}
+
+
 

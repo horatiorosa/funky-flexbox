@@ -65,12 +65,31 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .container {
   display: flex;
   border: 5px solid var(--yellow);
+  height: 100vh;
+  align-items: baseline;
   flex-direction: column;
-  justify-content: space-around;
-  min-height: 100vh;
 }
 
-.box {
-  font-size: 20px;
+.box1 {
+  font-size: 205px;
 }
+
+.box3 {
+  font-size: 75px;
+}
+
+.box5 {
+  font-size: 160px;
+}
+
+.box7 {
+  font-size: 30px;
+}
+
+.box9 {
+  font-size: 45px;
+}
+
+
+
 

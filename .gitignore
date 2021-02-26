@@ -4,3 +4,5 @@ node_modules/
 
 
 # browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'Firefox'
+
+# <link rel="stylesheet" href="../base.css">

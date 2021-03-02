@@ -3,7 +3,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -16,28 +18,62 @@ body {
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
-  padding:50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
-  max-width:100%;
+  max-width: 100%;
 }
 
 a {
-  color:white;
+  color: white;
   text-decoration: none;
   font-size: 15px;
-  background:rgba(0,0,0,0.2);
-  padding:20px 5px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px 5px;
 }
+
 a:hover {
-  background:rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
-
+ /* flex container */
 .slider-nav ul {
   list-style: none;
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  display: flex;
+ }
+
+/* slider nav items */
+.slider-nav li {
+  flex: 2;
+  border: 1px solid var(--yellow);
+  display: flex;
+  text-align: center;
+}
+
+.slider-nav a {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-nav li.arrow {
+  flex: 1;
+}
+
+/*
+ we don't seem to need this CSS nor do we need to wrap the text in the link tags in a span.justifu-content and align-items both set to center places the text inthe middle of the flex items.
+.slider-nav span {
+  display: block;
+  width: 100%;
+}
+*/
+.arrow a {
+  font-size: 30px;
 }
 
